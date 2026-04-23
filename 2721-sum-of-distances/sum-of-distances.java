@@ -50,7 +50,7 @@ class Solution {
         long[] result = new long[nums.length];  
         for(Map.Entry<Integer, List<Integer>>entry : map.entrySet()){
             List<Integer> l1 = entry.getValue();
-            if(entry.getValue().size()==1) result[l1.get(0)] = 0;
+            if(l1.size()==1) result[l1.get(0)] = 0;
             else {
                 for(int i = 0; i < l1.size(); i++){
                     long sum = 0;
